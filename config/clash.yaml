@@ -1,0 +1,19 @@
+prepend:
+  - 'DOMAIN-SUFFIX,hltv.org,DIRECT'
+  - 'DOMAIN-SUFFIX,hl365.com,飞鸟云'
+  - 'DOMAIN-SUFFIX,chatgpt.com,飞鸟云'
+  - 'DOMAIN-KEYWORD,vbing.me,DIRECT'
+  - 'DOMAIN-KEYWORD,libvio,DIRECT'
+  - 'GEOSITE,category-ads-all,REJECT'
+  - 'DOMAIN-KEYWORD,tracker,REJECT'
+  - 'DOMAIN-KEYWORD,steamcloud,DIRECT'
+  - 'DOMAIN-SUFFIX,steamcontent.com,DIRECT'
+  - 'DOMAIN,steamcdn-a.akamaihd.net,DIRECT'
+  - 'DOMAIN-SUFFIX,steamserver.net,DIRECT'
+  - 'DOMAIN-SUFFIX,steamstatic.com,DIRECT'
+  - 'DOMAIN-SUFFIX,steampowered.com,飞鸟云'
+  - 'DOMAIN-SUFFIX,freeokk.pro,DIRECT'
+append:
+  - 'MATCH,飞鸟云'
+delete:
+  - 'MATCH,DIRECT'
