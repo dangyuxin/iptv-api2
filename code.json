@@ -1,48 +1,63 @@
 {
-    "json.schemaDownload.enable": false,
-    "editor.inlineSuggest.enabled": true,
-    "editor.fontSize": 20,
+    // ========== 编辑器基础视觉与滚动 ==========
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Monaco,Meno,CodeNewRoman Nerd Font, JetBrainsMono NerdFont Propo,Consolas, 'Courier New', monospace",
+    "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
     "workbench.list.smoothScrolling": true,
-    "explorer.confirmDelete": false,
-    "terminal.integrated.smoothScrolling": true,
-    "editor.unicodeHighlight.allowedCharacters": {
-        "：": true,
-        "，": true,
-        "。": true,
-    },
+    "workbench.editor.empty.hint": "hidden",
+    // ========== 格式化、保存、空白处理 ==========
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "git.openRepositoryInParentFolders": "never",
+    "files.autoSave": "afterDelay",
+    // ========== Unicode 中文符号高亮放行 ==========
+    "editor.unicodeHighlight.includeComments": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "：": true,
+        "，": true,
+        "。": true
+    },
+    // ========== 资源管理器行为 ==========
+    "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "settingsSync.keybindingsPerPlatform": false,
-    "go.toolsManagement.autoUpdate": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.editor.empty.hint": "hidden",
+    "explorer.confirmPasteNative": false,
+    // ========== 终端配置 ==========
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
+    // ========== Git 相关 ==========
+    "git.openRepositoryInParentFolders": "never",
+    // ========== 安全、更新、推荐弹窗 ==========
+    "update.mode": "none",
+    "extensions.ignoreRecommendations": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.promptForLocalFileProtocolHandling": false,
+    // ========== AI、聊天功能关闭 ==========
+    "chat.disableAIFeatures": true,
+    "chat.editing.confirmEditRequestRetry": false,
+    // ========== Go / Notebook  ==========
+    "go.toolsManagement.autoUpdate": true,
     "notebook.formatOnCellExecution": true,
+    "notebook.lineNumbers": "on",
+    "settingsSync.keybindingsPerPlatform": false,
+    "json.schemaDownload.enable": false,
+    "editor.inlineSuggest.enabled": true,
+    // ========== 文件类型专属格式化器 ==========
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.unicodeHighlight.includeComments": false,
-    "extensions.ignoreRecommendations": true,
-    "explorer.confirmPasteNative": false,
-    "files.autoSave": "afterDelay",
-    "editor.cursorBlinking": "smooth",
-    "update.mode": "none",
-    "chat.editing.confirmEditRequestRetry": false,
-    "editor.fontFamily": "Monaco,Menlo,CodeNewRoman Nerd Font,Consolas, 'Courier New', monospace",
-    "terminal.integrated.mouseWheelZoom": true,
-    "editor.mouseWheelZoom": true,
-    "github.copilot.chat.reviewSelection.instructions": [],
-    "terminal.integrated.fontSize": 18,
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "C_Cpp.clang_format_fallbackStyle": "Google",
-    "workbench.settings.applyToAllProfiles": [
-        
-    ],
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    // ========== 全局主题 ==========
+    "workbench.colorTheme": "Catppuccin Mocha"
 }
