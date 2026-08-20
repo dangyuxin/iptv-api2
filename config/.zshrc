@@ -51,6 +51,9 @@ zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:*' switch-group '<' '>'
 zstyle ':fzf-tab:*' show-group full
 zstyle ':fzf-tab:*' fzf-preview 'none'
+zstyle ':fzf-tab:*' fzf-flags --height 50% --layout reverse --preview-window=nohidden --preview-border=rounded --marker '✓' --info inline
+zstyle ':fzf-tab:*' fzf-bindings 'ctrl-space:toggle+down'
+zstyle ':fzf-tab:*' fzf-bindings 'alt-space:toggle+down,ctrl-/:toggle-preview'
 #✅只在【文件路径参数】开启预览，选项(--help -v)不会弹出预览
 zstyle ':fzf-tab:complete:*' fzf-preview '
 if [[ -d $realpath ]]; then
